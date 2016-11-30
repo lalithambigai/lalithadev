@@ -3,8 +3,10 @@ package com.backend.dao;
 
 import java.util.List;
 
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -100,11 +102,21 @@ public class ProductDaoImpl implements Productdao {
     	    	session.delete(pid);
     	    	session.flush();
     	    	session.close();   
-    	  }}    	  
     	  
-		//public void save(Product product) {
-			// TODO Auto-generated method stub
-			
+    	  }
+    	   
+    	  public List<Product> prod(String  category)
+    	  {
+    		  Session session=sessionFactory.openSession();
+    		  Criteria c=session.createCriteria(Product.class);
+    		  c.add(Restrictions.eq("category",category));
+    		  List<Product> lis=c.list();
+    		  System.out.println("huygyu");
+    		  System.out.println(lis);
+    		  return lis;
+    	  }
+    	  }
+		
 	
 
 

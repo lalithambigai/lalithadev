@@ -79,7 +79,7 @@ h1 {
 			<th>PRODUCT DESC</th>
 			<th>PRICE</th>
 			<th>QUANTITY</th>
-			<th>Category</th>
+			<th>CATEGORY</th>
 			<th>edit/delete</th>
 		</tr>
 		<!--  for Each book b in books -->

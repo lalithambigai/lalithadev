@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+       <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+   <%@ page isELIgnored="false" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -15,33 +17,56 @@
 
 </head>
 <body>
+
 <header>
-       <div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
-        <div class="container">
-        <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+<div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Cosmic gallery</a>
- </div>
-     <div class="navigation">
-     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><nav>
-     <ul class="nav navbar-nav navbar-right">
-        <li class="current"><a href="index">Home</a>
+      <a class="navbar-brand" href="index.html">Cosmic Gallery</a>
+    </div>
+
+	<div class="navigation">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <nav>
+    <ul class="nav navbar-nav navbar-left">
+        <li class="current"><a href="index">Home</a></li>
         <li><a href="listpage">Viewproduct</a></li>
 	    <li><a href="add">Addproduct</a></li>
-	    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="category">Categories<span class="caret"></span></a>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
         <ul class="dropdown-menu">
-        <li><a href="categories">Lakme</a></li>
-        <li><a href="categories">olay</a></li>
-        <li><a href="categories">dazler</a></li>
-        </ul>
-        </li>	
-	    <ul class="nav navbar-nav navbar-right">
-         <li><a href="index"><span class="glyphicon glyphicon-log-out"></span>Logout</a>      
-         </li>
-         </ul></header>
+          <li><a href="lipstick">Lipstick</a></li>
+          <li><a href="maskara">Maskara</a></li>
+          <li><a href="eyeliner">Eyeliner</a></li>
+           <li><a href="kajal">Kajal</a></li>
+      </ul>  
+      </ul> 
+      <c:if test ="${sessionScope.name eq null}">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="check">SIGNUP</a></li>
+	     <li><a href="LOGIN">LOGIN</a></li>
+	</ul>
+     </c:if>
+        <c:if test="${sessionScope.name  ne null}">
+         <ul class="nav navbar-nav navbar-right">
+            <h1> "Hai" ${sessionScope.name}</h1>
+            <li> <a href="logout">LOGOUT</a></li>
+            </ul>
+            </c:if>
+       </nav>
+    </div>
+	</div>
+
+  </div>
+</div>
+
+</header>	   
 </body>
 </html>

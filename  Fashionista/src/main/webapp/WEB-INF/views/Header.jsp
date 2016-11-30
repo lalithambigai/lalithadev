@@ -22,31 +22,39 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Fashionista</a>
+      <a class="navbar-brand" href="index.html">COSMIC GALLERY</a>
     </div>
-
-	<div class="navigation">
+    <div class="navigation"><nav>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <nav>
+        <ul class="nav navbar-nav navbar-right">
+       <li class="current"><a href="index">Home</a></li>
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="cat?catt=Lipstick">Lipstick</a></li>
+          <li><a href="cat?catt=Maskara">Maskara</a></li>
+          <li><a href="cat?catt=Eyeliner">Eyeliner</a></li>
+           <li><a href="cat?catt=kajal">Kajal</a></li>
+         </ul>  
+    </li> 
+       
+    <c:if test ="${sessionScope.name eq null}">
       <ul class="nav navbar-nav navbar-right">
-        <li class="current"><a href="#intro">Home</a></li>
-		<li><a href="#about">About</a></li>
-		<li><a href="#login">login</a></li>
-		<li><a href="#signup">signup</a></li>
-      </ul></nav>
-    </div><!-- /.navbar-collapse -->
+          <li><a href="check">SIGNUP</a></li>
+	     <li><a href="LOGIN">LOGIN</a></li>
+	</ul>
+	</c:if>
+	 </ul> 
+     <c:if test="${sessionScope.name  ne null}">
+         <ul class="nav navbar-nav navbar-right">
+         <h1> "Hai" ${sessionScope.name}</h1>
+            <li> <a href="logout">LOGOUT</a></li> 
+         </ul>
+       </c:if>
+      </div>
+      </nav>
 	</div>
-
   </div>
 </div>
-
 </header>
-
-
-
-
-
-
-
 </body>
 </html>

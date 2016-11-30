@@ -2,6 +2,8 @@ package com.welcome.Controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -105,8 +107,23 @@ public ModelAndView gotolist()
 		 pd.update(pid);
 		 return "redirect:/listpage";
 	 }
-}
+
 	 
+	 
+	 
+	 
+	 @RequestMapping(value="/cat",method=RequestMethod.GET)
+		
+	 public ModelAndView viewlist(HttpServletRequest req) {
+			List<Product> lis=pd.prod(req.getParameter("catt"));
+			ModelAndView pro=new ModelAndView("cat");
+			pro.addObject("prot",lis);
+			
+			System.out.println(lis);
+ 		   return pro;
+		    
+		   }}
+	   
 	 
 	 
 	 

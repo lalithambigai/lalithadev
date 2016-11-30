@@ -12,12 +12,15 @@ public interface Productdao {
 	public List<Product> list1();
 
 		public List<User> list2(); 
+		public List<Product> prod(String categories);
+	     
 		    public void save(Product product);
 		     public void update(Product product);
 		    public void delete(int pid);
 		     
 		   public Product getproductbyid(int pid);
-		     
+
+		
 	
 		}
 

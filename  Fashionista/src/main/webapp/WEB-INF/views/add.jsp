@@ -49,36 +49,7 @@ color:red;
 <body>
 
 
-<!-- 
-<div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
-  <div class="container">
 
-    Brand and toggle get grouped for better mobile display
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Fashionista</a>
-    </div>
-
-	<div class="navigation">
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="current"><a href="Home">Home</a></li>
-		<li><a href="check">SIGNUP</a></li>
-		<li><a href="LOGIN">LOGIN</a></li>
-			<li><a href="listpage">Viewproduct</a></li>
-		<li><a href="add">Addproduct</a></li>
-      </ul></nav>
-    </div>/.navbar-collapse
-	</div>
-
-  </div>
-</div>
-
- -->
 
 
 <div class="container" id="wrap">
@@ -115,18 +86,17 @@ color:red;
       <label for="quantity">Quantity:</label>
       <input type="text" class="form-control" name="quantity">
     </div>
+  
     
-    <div class="form">
-      <!-- <label for="category">Category:</label> --> 
-     <!--  <input type="text" class="form-control" name="category"> -->
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="category">Category</a>
-        <ul class="dropdown-menu">
-          <li><a href="categories">Lakme</a></li>
-          <li><a href="categories">olay</a></li>
-          <li><a href="categories">dazler</a></li>  
-          </ul>
-         </li> 
-         </div> 
+     <tr>
+       <td><form:label path="category">Category:</form:label></td>
+       <td><form:select path="category"  id="single1">
+         <option>Lipstick</option>
+          <option>Maskara</option>
+          <option>Eyeliner</option>
+           <option>Kajal</option>
+          </form:select></td>
+    </tr>
     <br>
 	<input name="_eventId_submit" type="submit" class="btn btn-success" value="Add"/><br />
 			 	</form:form>

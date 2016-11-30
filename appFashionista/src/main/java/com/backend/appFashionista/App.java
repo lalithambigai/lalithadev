@@ -60,7 +60,7 @@ public class App
 		        add.setPassword("sweety");
 		        add.setPassword_confirm("sweety");
 		  */
-		  ud.save(add);
+		//  ud.save(add);
 	ud.update(add);
         
    //     Product add = new Product();
