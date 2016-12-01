@@ -10,6 +10,10 @@
 <title>Insert title here</title>
     </head>
 <body>
+<style>
+h1 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}
+   </style>
 <header>
 
 <div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">

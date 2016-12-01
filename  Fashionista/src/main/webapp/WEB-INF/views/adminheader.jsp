@@ -17,6 +17,10 @@
 
 </head>
 <body>
+<style>
+h1 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}
+   </style>
 
 <header>
 

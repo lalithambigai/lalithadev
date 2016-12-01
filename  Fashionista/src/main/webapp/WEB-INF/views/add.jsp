@@ -47,11 +47,6 @@ color:red;
 </style> 
 </head>
 <body>
-
-
-
-
-
 <div class="container" id="wrap">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -100,7 +95,7 @@ color:red;
     <br>
 	<input name="_eventId_submit" type="submit" class="btn btn-success" value="Add"/><br />
 			 	</form:form>
-			</fieldset>
+			
 		</div></div></div>
 	</body>
 </html>

@@ -5,9 +5,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page isELIgnored="false" %>
 
- <%@ include file="/WEB-INF/views/Header.jsp" %> 
+
 <html>
 <head>
+ <%@ include file="/WEB-INF/views/adminheader.jsp" %> 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 <link rel="stylesheet"

@@ -62,7 +62,16 @@ background-size:cover;
         <td><form:label path="quantity">Quantity</form:label>  </td>
         <td><form:input path="quantity"></form:input></td>
 	    </tr>
-	     <tr>
+	     
+	      <tr>
+       <td><form:label path="category">Category:</form:label></td>
+       <td><form:select path="category"  id="single1">
+         <option>Lipstick</option>
+          <option>Maskara</option>
+          <option>Eyeliner</option>
+           <option>Kajal</option>
+          </form:select></td>
+    </tr>
 	    <td colspan="2"><input type="submit" value="edit"></td>
 	    </tr>
 		</table>
