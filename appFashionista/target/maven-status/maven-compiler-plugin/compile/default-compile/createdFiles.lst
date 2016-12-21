@@ -1,0 +1,15 @@
+com\backend\configuration\AppConfig.class
+com\backend\dao\CategoryDaoImpl.class
+com\backend\model\Category.class
+com\backend\dao\Productdao.class
+com\backend\dao\ProductDaoImpl.class
+com\backend\dao\UserDaoImpl.class
+com\backend\dao\Categorydao.class
+com\backend\service\ProductService.class
+com\backend\appFashionista\App.class
+com\backend\model\User.class
+com\backend\service\ProductServiceImpl.class
+com\backend\dao\UserDao.class
+com\backend\model\Product.class
+com\backend\service\UserService.class
+com\backend\service\UserServiceImpl.class

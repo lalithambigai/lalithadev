@@ -1,17 +1,16 @@
 package com.backend.model;
-
-
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.web.multipart.MultipartFile;
 
 
 
@@ -27,20 +26,24 @@ public class Product
 private int pid;
 
 @NotEmpty
-@Size(min=2,max=20)
+@Size(min=5,max=20)
 private String pname;
 
 @NotEmpty
-@Size(min=2,max=20)
+@Size(min=5,max=20)
+
 private String pdesc;
 @NotNull
-@Min(2)
+@Min(100)
+
 private int price;
+
 @NotNull
-@Min(1)
+@Min(10)
 private int quantity;
 private String category;
-
+@Transient
+private MultipartFile files;
 public int getPid() {
 	return pid;
 }
@@ -78,6 +81,11 @@ public String getCategory() {
 public void setCategory(String category) {
 	this.category = category;
 }
-
+public MultipartFile getFiles() {
+	return files;
+}
+public void setFiles(MultipartFile files) {
+	this.files = files;
+}
 
 }
