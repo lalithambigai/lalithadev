@@ -28,7 +28,7 @@
     <style>
  body
 {
-background-image: url("<c:url value='/resources/image/bg1.jpg'/>"); 
+background-image: url("<c:url value='/resources/images/bg1.jpg'/>"); 
   background-repeat: no-repeat; 
 background-size:cover; 
 }
@@ -94,18 +94,21 @@ background-size:cover;
 <section id="intro">
 			<ul id="slippry-slider">
 			  
-			  
-			   
+			
+				
 				<li>
-				<a href="#slide"><img src="<c:url value='/resources/assets/img/slide/c6.jpg'/>" alt="Welcome to fashion world!">
+				<a href="#slide"><img src="<c:url value='/resources/assets/img/slide/6666.jpg'/>" alt="Welcome to fashion world!">
 				</a>
 				</li>
 				<li>
-				<a href="#slide"><img src="<c:url value='/resources/assets/img/slide/c10.jpg'/>">
+				<a href="#slide"><img src="<c:url value='/resources/assets/img/slide/7777.jpg'/>">
 				</a>
 				</li>
 				<li>
 				<a href="#slide"><img src="<c:url value='/resources/assets/img/slide/uu.jpg'/>">
+				</a>
+				</li><li>
+				<a href="#slide"><img src="<c:url value='/resources/assets/img/slide/c5.jpg'/>">
 				</a>
 				</li>
 				 
@@ -143,21 +146,10 @@ background-size:cover;
 	</div>
 	
 	
-	<video width="400" controls>
-  <source src="mov_bbb.mp4" type="video/mp4">
-  <source src="mov_bbb.ogg" type="video/ogg">
-  Your browser does not support HTML5 video.
-</video>
-
-<p>
-Video courtesy of
-<a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
-</p>
-	
 	<div class="row">
 		<div class="col-md-3">
 			<div class="team-box">
-			<img src="resources/assets/image/Lash Perfection _ Makeup Artist Secrets from Lancôme.mp4" alt="" class="img-responsive" />
+			<img src="resources/assets/img/dummies/ab3.jpg" alt="" class="img-responsive" />
 			<div class="roles">
 				<h5><strong></strong></h5>
 				<p>

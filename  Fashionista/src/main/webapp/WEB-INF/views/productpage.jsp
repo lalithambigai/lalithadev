@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page isELIgnored="false" %>
+
 
 
 <html>
@@ -20,21 +20,22 @@
 	 <style>
 body
 {
-background-image: url("<c:url value='/resources/image/bg17.jpg'/>");
+background-image: url("<c:url value='/resources/images/bg17.jpg'/>");
   background-repeat: no-repeat; 
 background-size:cover; 
 } 
 </style>
 </head>
 <body>
-
+<br>
 <br>
 <br>
 <br>
 <br>
 
 NAME:  ${showobj.pname}<br><br>
-DETAILS:${showobj.pname}
-
+DESC:  ${showobj.pdesc}<br><br>
+PRICE: ${showobj.price}<br><br>
+<img src="<c:url value ="/resources/image/${showobj.getPid()}.jpg" /> ">
 </body>
 </html>

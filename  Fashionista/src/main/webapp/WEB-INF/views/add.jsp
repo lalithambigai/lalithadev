@@ -20,7 +20,7 @@
 	 <style>
 body
 {
-background-image: url("<c:url value='/resources/image/m2.jpg'/>");
+background-image: url("<c:url value='/resources/images/m2.jpg'/>");
   background-repeat: no-repeat; 
 background-size:cover; 
 } 
@@ -55,7 +55,7 @@ color:red;
    <br>
    <br>
    <H2>Product Details</H2>
-  <form:form method="POST" action="productcheck" commandName="prod">
+  <form:form method="POST" action="productcheck" commandName="prod" enctype="multipart/form-data" style="border-top-width: 100px;height: 1000px; width: 800px; padding-top: 100px; padding-bottom: 100px;left: 100px; top: 100px;">
 				 
 				 <!-- 
 				  <div class="form">
@@ -76,8 +76,7 @@ color:red;
       <input type="text" class="form-control" name="price">
     </div>
     
-    
-    	<div class="form">
+                   <div class="form">
       <label for="quantity">Quantity:</label>
       <input type="text" class="form-control" name="quantity">
     </div>
@@ -86,14 +85,19 @@ color:red;
      <tr>
        <td><form:label path="category">Category:</form:label></td>
        <td><form:select path="category"  id="single1">
-         <option>Lipstick</option>
-          <option>Maskara</option>
-          <option>Eyeliner</option>
-           <option>Kajal</option>
-          </form:select></td>
+         <option>Lakme</option>
+          <option>Olay</option>
+          <option>Dazler</option>
+           <option>Loreal</option>
+            <option>Maybelline</option>
+               <option>Chambor</option>
+       </form:select></td>
     </tr>
     <br>
-	<input name="_eventId_submit" type="submit" class="btn btn-success" value="Add"/><br />
+    <td>
+    <input type="file"  value="upload" name="files">
+     </td>
+    	<input name="_eventId_submit" type="submit" class="btn btn-success" value="Add"/><br />
 			 	</form:form>
 			
 		</div></div></div>

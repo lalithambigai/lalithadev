@@ -34,11 +34,13 @@ h1 {
        <li class="current"><a href="index">Home</a></li>
 	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="cat?catt=Lipstick">Lipstick</a></li>
-          <li><a href="cat?catt=Maskara">Maskara</a></li>
-          <li><a href="cat?catt=Eyeliner">Eyeliner</a></li>
-           <li><a href="cat?catt=kajal">Kajal</a></li>
-         </ul>  
+          <li><a href="cat?catt=Lakme">Lakme</a></li>
+          <li><a href="cat?catt=Olay">Olay</a></li>
+          <li><a href="cat?catt=Dazler">Dazler</a></li>
+           <li><a href="cat?catt=Loreal">Loreal</a></li>
+            <li><a href="cat?catt=Maybelline">Maybelline</a></li>
+             <li><a href="cat?catt=Dazler">Chambor</a></li>
+          </ul>  
     </li> 
        
     <c:if test ="${sessionScope.name eq null}">

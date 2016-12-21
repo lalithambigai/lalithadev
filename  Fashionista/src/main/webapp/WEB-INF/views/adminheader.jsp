@@ -46,10 +46,12 @@ h1 {
 	    <li><a href="add">Addproduct</a></li>
 		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="lipstick">Lipstick</a></li>
-          <li><a href="maskara">Maskara</a></li>
-          <li><a href="eyeliner">Eyeliner</a></li>
-           <li><a href="kajal">Kajal</a></li>
+          <li><a href="cat?catt=Lakme">Lakme</a></li>
+          <li><a href="cat?catt=Olay">Olay</a></li>
+          <li><a href="cat?catt=Dazler">Dazler</a></li>
+           <li><a href="cat?catt=Loreal">Loreal</a></li>
+           <li><a href="cat?catt=Maybelline">Maybelline</a></li>
+           <li><a href="cat?catt=Dazler">Chambor</a></li>
       </ul>  
       </ul> 
       <c:if test ="${sessionScope.name eq null}">

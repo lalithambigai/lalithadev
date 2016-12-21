@@ -1,5 +1,11 @@
 package com.welcome.Controller;
 
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -7,11 +13,11 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.backend.dao.Productdao;
@@ -23,9 +29,7 @@ import com.backend.model.Product;
 public class Admincontroller 
 {
 	private Productdao pd;
-	private int pid;
-
-    public Productdao getPd() {
+	public Productdao getPd() {
 		return pd;
 	}
     public void setPd(Productdao pd) {
@@ -50,18 +54,31 @@ public String prod1(Model model)
 }
 
 @RequestMapping(value ="/productcheck",method = RequestMethod.POST)
-public String prod2(@ModelAttribute(value="prod")Product product,ModelMap model )
-{
+public String prod2(@ModelAttribute(value="prod")Product product,MultipartFile files,HttpServletRequest request)throws IOException{
+System.out.println("fileuploaded");
 	 pd.save(product);
-		return "redirect:/listpage"; 
+	 MultipartFile files1 = product.getFiles();
+	 System.out.println(files1.getOriginalFilename());
+	String p=request.getContextPath();
+	
+	//Path pa=Paths.get(request.getContextPath());
+	//pa=pa.toAbsolutePath();
+	//System.out.println(pa);
+	
+	//p=p+"/resources/image/" +product.getPid()+".jpg";
+	System.out.println(p);
+	 String path ="C:/Users/Lalitha/git/lalithadev/ Fashionista/src/main/webapp/resources/image/" +product.getPid()+".jpg";
+	 byte[] bytes = files1.getBytes();
+	/* System.out.println(files.getBytes());*/
+	 System.out.println("check");
+	 System.out.println(path);
+	  BufferedOutputStream image = new BufferedOutputStream(new FileOutputStream(new File(path)));
+	 image.write(bytes);
+	 image.close();
+	return "redirect:/listpage"; 
 	 
 } 
 
-
-
-
-
-		 
 @RequestMapping(value = "/listpage")
 public ModelAndView gotolist()
 {
@@ -70,11 +87,7 @@ public ModelAndView gotolist()
 	return new ModelAndView("listpage","lobj",ob);
 }
 	
-	
-	
-
-	 
-	@RequestMapping("/getproductbyid/{pid}")
+@RequestMapping("/getproductbyid/{pid}")
 	 public ModelAndView pos(@PathVariable(value="pid")int pid)
 	 {
 		Product pr=pd.getproductbyid(pid);

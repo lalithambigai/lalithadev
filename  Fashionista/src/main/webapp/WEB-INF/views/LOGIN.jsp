@@ -18,7 +18,7 @@
 <style>
  body
 {
-background-image: url("<c:url value='/resources/image/bg19.jpg'/>"); 
+background-image: url("<c:url value='/resources/images/bg19.jpg'/>"); 
   background-repeat: no-repeat; 
 background-size:cover; 
 }
@@ -86,9 +86,8 @@ margin:40px;
       <label><input type="checkbox">Remember me</label>
     </div>
      <input name="_eventId_submit" type="submit" id="btnSubmit" class="btn btn-success" value="Submit"/><br />
-     
- <!--      
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+          
+  <!--       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(function () {
         $("#btnSubmit").click(function ()
@@ -100,11 +99,12 @@ margin:40px;
         	  alert("valid details");
                 return true;
           }
+           
           alert("invalid details");
             return false;
-        });
+          });
     });
-</script>  -->
+</script>   -->
      
   </form>
 </div></div>
