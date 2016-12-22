@@ -4,9 +4,11 @@ package com.backend.appFashionista;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.backend.dao.CartDao;
 import com.backend.dao.Categorydao;
 import com.backend.dao.Productdao;
 import com.backend.dao.UserDao;
+import com.backend.model.Cart;
 import com.backend.model.Category;
 import com.backend.model.Product;
 import com.backend.model.User;
@@ -49,8 +51,8 @@ public class App
 		 
 		Productdao pd=(Productdao)appobj.getBean("pdao");
 		UserDao ud=(UserDao)appobj.getBean("udao");
-		Categorydao cd=(Categorydao)appobj.getBean("cdao");
-		
+	/*	Categorydao cd=(Categorydao)appobj.getBean("cdao");*/
+		CartDao cd=(CartDao)appobj.getBean("ccdao");
 
 		  User add = new User();
 		 
@@ -81,16 +83,18 @@ public class App
 		        pd.delete(1);       
 		        
 		       
+		Cart addd = new Cart();
+		cd.save(addd);
+		cd.delete(1);
 		        
 		        
-		        
-		        Category cat1 = new Category();
+		       /* Category cat1 = new Category();
 		          cat1.setCid(1);
 		         cat1.setCatname("lipppp");
 		        cat1.setCatdesc("excellent");
 		      
 		         
-		 		        cd.save(cat1);
+		 		        cd.save(cat1);*/
 		 		       // cd.delete(1);       
 		 		        
 		        

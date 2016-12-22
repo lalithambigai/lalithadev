@@ -33,9 +33,15 @@ background-size:cover;
 <br>
 <br>
 
-NAME:  ${showobj.pname}<br><br>
-DESC:  ${showobj.pdesc}<br><br>
-PRICE: ${showobj.price}<br><br>
-<img src="<c:url value ="/resources/image/${showobj.getPid()}.jpg" /> ">
+NAME:  ${showobjj.pname}<br><br>
+DESC:  ${showobjj.pdesc}<br><br>
+PRICE: ${showobjj.price}<br><br>
+
+<img src="<c:url value = "/resources/image/${showobjj.getPid()}.jpg"/>"/>
+<input name="_eventId_submit" type="submit" class="btn btn-success" value="Add to cart"/><br />
+<br>
+<br>
+<br>
+<input name="_eventId_submit" type="submit" class="btn btn-primary" value="Buynow"/><br />
 </body>
 </html>

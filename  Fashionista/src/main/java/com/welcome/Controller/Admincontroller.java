@@ -91,7 +91,7 @@ public ModelAndView gotolist()
 	 public ModelAndView pos(@PathVariable(value="pid")int pid)
 	 {
 		Product pr=pd.getproductbyid(pid);
-		return new ModelAndView("productpage","showobj",pr);
+		return new ModelAndView("productpage","showobjj",pr);
 	 }
 	 
 	 

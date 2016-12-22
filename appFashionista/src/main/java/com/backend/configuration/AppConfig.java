@@ -15,6 +15,8 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.backend.dao.CartDao;
+import com.backend.dao.CartDaoImpl;
 import com.backend.dao.CategoryDaoImpl;
 import com.backend.dao.Categorydao;
 import com.backend.dao.ProductDaoImpl;
@@ -23,6 +25,7 @@ import com.backend.dao.Productdao;
 //import com.backend.dao.Productdao;
 import com.backend.dao.UserDao;
 import com.backend.dao.UserDaoImpl;
+import com.backend.model.Cart;
 import com.backend.model.Category;
 import com.backend.model.Product;
 import com.backend.model.User;
@@ -42,6 +45,8 @@ public class AppConfig {
    System.out.println("after");
    sessionBuilder.addAnnotatedClasses(Product.class);
    sessionBuilder.addAnnotatedClasses(Category.class);
+   sessionBuilder.addAnnotatedClasses(Cart.class);
+	 
 	 
 	    return sessionBuilder.buildSessionFactory();
 	}
@@ -90,24 +95,24 @@ public HibernateTransactionManager getTransactionManager(SessionFactory sessionF
 	}
 	@Autowired
 	@Bean(name = "pdao")
-	public Productdao getProductDao()
+	public Productdao getProductService()
 	{
 		return new ProductDaoImpl();
 	}
 	
 	@Autowired
 	@Bean(name = "udao")
-	public UserDao getUserDao()
+	public UserDao getUserService()
 	{
 		return new UserDaoImpl();
 	}
 	
 	
 @Autowired
-@Bean(name = "cdao")
-public Categorydao getCategorydao()
+@Bean(name = "ccdao")
+public CartDaoImpl getCart()
 {
-	return new CategoryDaoImpl();
+	return new CartDaoImpl();
 }
 
 }	

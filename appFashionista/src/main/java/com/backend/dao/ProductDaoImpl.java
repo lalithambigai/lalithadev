@@ -35,7 +35,7 @@ public class ProductDaoImpl implements Productdao {
     	Session session=sessionFactory.openSession();
     	session.save(product);
     	session.flush();
-    //	session.close(); 
+    	session.close(); 
 }
     	
      
