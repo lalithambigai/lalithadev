@@ -20,7 +20,7 @@
 	 <style>
 body
 {
-background-image: url("<c:url value='/resources/images/m2.jpg'/>");
+background-image: url("<c:url value='/resources/imag/m2.jpg'/>");
   background-repeat: no-repeat; 
 background-size:cover; 
 } 

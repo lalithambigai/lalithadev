@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.backend.model.Cart;
 
-public class CartDaoImpl {
+public class CartDaoImpl implements CartDao {
 
 	 @Autowired
 	    private SessionFactory sessionFactory;

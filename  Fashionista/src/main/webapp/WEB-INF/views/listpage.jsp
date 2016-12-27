@@ -17,7 +17,7 @@
  <style>
 body
 {
-background-image: url("<c:url value='/resources/images/bg18.jpg'/>");
+background-image: url("<c:url value='/resources/imag/bg18.jpg'/>");
   background-repeat: no-repeat; 
 background-size:cover; 
 } 

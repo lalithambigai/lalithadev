@@ -18,7 +18,7 @@
 <style>
  body
 {
-background-image: url("<c:url value='/resources/images/bg19.jpg'/>"); 
+background-image: url("<c:url value='/resources/imag/bg19.jpg'/>"); 
   background-repeat: no-repeat; 
 background-size:cover; 
 }
@@ -55,25 +55,7 @@ margin:40px;
  <h3>Login Page</h3>
   <form action="Signin" method="post">
    
-   
-   
- <%--   
-   <form:form method="post" modelAttribute="userForm" action="Signin">
-	<c:set var="nameHasBindError">
-		<form:errors path="name"/>
-	</c:set>
-
-	<div class="form-group ${not empty nameHasBindError?"has-error":""}">
-		<label>Name</label>
-		<form:input path="name" type="text" id="name" />
-		${nameHasBindError}
-	</div>
-</form:form>
- --%>   
-      <c:if test="${not empty error}">  
-            <h2><left>Enter Details</left></h2>
-                <div class="error" style="color: red;">${error}</div>
-                </c:if>  
+	  
  <div class="form">
       <label for="UserName">Username:</label>
       <input type="text" class="form-control" name="username"  required placeholder="Enter user name">
@@ -87,26 +69,9 @@ margin:40px;
     </div>
      <input name="_eventId_submit" type="submit" id="btnSubmit" class="btn btn-success" value="Submit"/><br />
           
-  <!--       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $("#btnSubmit").click(function ()
-        		{
-            var username = $("#txtUsername").val();
-            var password = $("#txtPassword").val();
-           
-          {
-        	  alert("valid details");
-                return true;
-          }
-           
-          alert("invalid details");
-            return false;
-          });
-    });
-</script>   -->
-     
+  
   </form>
+ 
 </div></div>
 </div></div>
 </body>

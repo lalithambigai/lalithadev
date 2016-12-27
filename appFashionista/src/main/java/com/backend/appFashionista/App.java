@@ -5,11 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.backend.dao.CartDao;
-import com.backend.dao.Categorydao;
 import com.backend.dao.Productdao;
 import com.backend.dao.UserDao;
 import com.backend.model.Cart;
-import com.backend.model.Category;
 import com.backend.model.Product;
 import com.backend.model.User;
 import com.backend.service.UserServiceImpl;

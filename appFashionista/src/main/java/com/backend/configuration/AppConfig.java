@@ -17,16 +17,16 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.backend.dao.CartDao;
 import com.backend.dao.CartDaoImpl;
-import com.backend.dao.CategoryDaoImpl;
-import com.backend.dao.Categorydao;
+/*import com.backend.dao.CategoryDaoImpl;
+import com.backend.dao.Categorydao;*/
 import com.backend.dao.ProductDaoImpl;
 import com.backend.dao.Productdao;
 //import com.backend.dao.ProductDaoImpl;
 //import com.backend.dao.Productdao;
 import com.backend.dao.UserDao;
 import com.backend.dao.UserDaoImpl;
-import com.backend.model.Cart;
-import com.backend.model.Category;
+import com.backend.model.Cart;/*
+import com.backend.model.Category;*/
 import com.backend.model.Product;
 import com.backend.model.User;
 
@@ -44,7 +44,7 @@ public class AppConfig {
     sessionBuilder.addAnnotatedClasses(User.class);//scan
    System.out.println("after");
    sessionBuilder.addAnnotatedClasses(Product.class);
-   sessionBuilder.addAnnotatedClasses(Category.class);
+  /* sessionBuilder.addAnnotatedClasses(Category.class);*/
    sessionBuilder.addAnnotatedClasses(Cart.class);
 	 
 	 
@@ -110,7 +110,7 @@ public HibernateTransactionManager getTransactionManager(SessionFactory sessionF
 	
 @Autowired
 @Bean(name = "ccdao")
-public CartDaoImpl getCart()
+public CartDao getCartService()
 {
 	return new CartDaoImpl();
 }
