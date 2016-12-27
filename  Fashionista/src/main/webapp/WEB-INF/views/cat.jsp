@@ -20,7 +20,7 @@
 	 <style>
 body
 {
-background-image: url("<c:url value='/resources/images/bg18.jpg'/>");
+background-image: url("<c:url value='/resources/imag/bg18.jpg'/>");
   background-repeat: no-repeat; 
 background-size:cover; 
 } 
@@ -57,7 +57,7 @@ h1 {
       <th>${catt.getPdesc()}</th>
       <th>${catt.getPrice()}</th>
      <th>${catt.getQuantity()}</th>
- <td><a href="getproductbyid/${catt.pid}"><span class="glyphicon glyphicon-eye-open"></span></a>
+ <td><a href="getproductbyid?pid=${catt.pid}"><span class="glyphicon glyphicon-eye-open"></span></a>
   </td>
  </tr> 
 </c:forEach>

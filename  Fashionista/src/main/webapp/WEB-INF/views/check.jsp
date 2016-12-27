@@ -20,7 +20,7 @@
 	 <style>
 body
 {
-background-image: url("<c:url value='/resources/images/m3.jpg'/>");
+background-image: url("<c:url value='/resources/imag/m3.jpg'/>");
   background-repeat: no-repeat; 
 background-size:cover; 
 } 
@@ -58,30 +58,25 @@ color:red;
             <h2>Registration</h2>
 			   <form:form method="POST"  action="addUser" commandName="lalli">
 				 
-				 <div class="form">
 				 
-				 
-				 
-				
-				
-				
-				 <div>
+				   
+ <div class="form">
         <label for="username">UserName:</label>
         <input type="text" class="form-control" name="username" pattern="[A-Za-z]+" title="only letters" required />
          </div>
 		
 		
-		<div>
+		<div class="form">
 <label for="Email">Email:</label>
 <input type="email" class="form-control" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="xyz@something.com" required />
 </div>	
 
-<div>
+<div class="form">
 <label for="password">Password:</label>
 <input type="password" class="form-control" name="password"  id="txtPassword" required="true" />
 </div>
 <!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="at least one number and one uppercase and lowercase letter, and at least 8 or more characters" -->
-<div>
+<div class="form">
       <label for="conform_password">Conform Password:</label>
       <input type="password" class="form-control" name="password_confirm" id="txtConfirmPassword" onkeyup="checkPass()">
    </div>
@@ -109,7 +104,6 @@ color:red;
 </script>
 				
 				</form:form>
-			</fieldset>
 		</div></div></div>
 	</body>
 </html>

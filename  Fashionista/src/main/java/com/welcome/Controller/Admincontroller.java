@@ -87,9 +87,11 @@ public ModelAndView gotolist()
 	return new ModelAndView("listpage","lobj",ob);
 }
 	
-@RequestMapping("/getproductbyid/{pid}")
-	 public ModelAndView pos(@PathVariable(value="pid")int pid)
-	 {
+@RequestMapping("/getproductbyid")
+	/* public ModelAndView pos(@PathVariable(value="pid")int pid)*/
+public ModelAndView pos(HttpServletRequest request) 
+{
+	int pid=Integer.parseInt(request.getParameter("pid"));
 		Product pr=pd.getproductbyid(pid);
 		return new ModelAndView("productpage","showobjj",pr);
 	 }
