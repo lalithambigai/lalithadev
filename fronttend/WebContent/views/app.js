@@ -1,26 +1,27 @@
 var app=angular.module("register",[]); 
 app.controller('controller',function($scope,$http,$location,$window)
 		{
+	//$scope.udata=
 	
 	var url="http://"+$window.location.host+"/chattapp";
 	alert("welcome");
 	
-	$scope.register=function()
+	$scope.registerr=function()
 	{
     alert("before post");
-	$http.post(url+'/register/'+$scope.username).success(function(data)
+	$http.post(url+'/register/'+$scope.username+'/'+$scope.email+'/'+$scope.password+'/'+$scope.mobileno).success(function(data)
 	{
-	System.out.println("lalitha");
     alert("after post");
+    $scope.login=function()
+    {
 	$log.log(data);
-				
+    }			
 	});
 	}
 	
 })
 				
 
-	
 	
 
 
