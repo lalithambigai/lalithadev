@@ -41,7 +41,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 			UserDao ud=(UserDao)appobj.getBean("udao");
 			
 			 Chat add = new  Chat();
-			 ud.save(add);
+		     	add.setUsername("lalli");
+		        add.setEmail("lalli6295");
+		        add.setPassword("sweety");
+		        add.setMobileno(null);
+		ud.save(add);
 	//	ud.update(add);
 	        
 	   

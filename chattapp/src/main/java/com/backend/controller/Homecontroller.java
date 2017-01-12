@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.backend.dao.UserDao;
 import com.backend.model.Chat;
@@ -31,20 +32,28 @@ public class Homecontroller {
 		 catch(Exception e){
 			 e.printStackTrace();}
 		 
-		 }
-	@RequestMapping(value="/register/{username}",method=RequestMethod.POST,headers="Accept=application/json")
+	}
+	
+	@RequestMapping(value="/register/{username}/{email}/{password}/{mobileno}",method=RequestMethod.POST,headers="Accept=application/json")
 
-		public ResponseEntity register(@PathVariable String username){
+		public String register(@PathVariable String username,@PathVariable String email,@PathVariable String password,@PathVariable String mobileno){
 		System.out.println("welcome");
 		Chat chat=new Chat();
 		chat.setUsername(username);
-		/*chat.setEmail(email);
+		chat.setEmail(email);
 		chat.setPassword(password);
-		chat.setPassword_confirm(password_confirm);*/
+		chat.setMobileno(mobileno);
+		 
 		ud.save(chat);
 		
-		return new ResponseEntity(HttpStatus.OK);
+		return "login";
+	}
+	
+	
+	@RequestMapping("/login")
+	public ModelAndView gotologin(){
+	return new ModelAndView("login");
+	}
+	}
 
-
-		}}
 	
