@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>B</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <!--  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+  -->
+<style>
+
+ 
+form
+{
+
+width:400px;
+background-color:white;
+padding:40px;
+margin:40px;
+}
+fieldset
+{
+
+width:500px;
+background-color:pink;
+padding:40px;
+margin:40px;
+}
+</style>
+</head>
+
+<body>
+<div class="container" id="wrap">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+   
+<div id="a">
+<br>
+<br>
+<br>
+<br>
+<div ng-controller="controller">
+ <h3>Login Page</h3>
+ 
+	  
+ <div class="form">
+      <label for="UserName">Username:</label>
+      <input type="text"   ng-model="username"  name="username"  required placeholder="Enter user name">
+    </div>
+    <div class="form2">
+      <label for="pwd">Password:</label>
+      <input type="password"  ng-model="password" name="password"  required  placeholder="Enter password">
+    </div>
+    
+    <br>
+    <!--  <input name="_eventId_submit" type="submit" id="btnSubmit" class="btn btn-success" value="Submit"/><br />
+           -->
+   <button type="submit" ng-click ="loginn()">Signin</button>
+ 
+ 
+</div>
+
+</div></div></div></div>
+</html>
