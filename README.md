@@ -36,7 +36,7 @@
       
      Step4:To create a Maven project in web app
       
-     Step5:To build and install a maven project
+     Step5:To build and install a Maven project
       
      Step6:To build a java path 
       
