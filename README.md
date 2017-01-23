@@ -24,7 +24,7 @@
  
  
  
-        welcome to collabrative project about chatter
+         welcome to collabrative project about chatter
         
           ->One or more peoples easily converse to at a time 
          
@@ -32,7 +32,7 @@
       
      Step2:It has create a one workspace and it stores to all those things
  
-     Step3:To create a Dynamic Web Project in frontend
+     Step3:To create a Dynamic Web Project in Frontend
       
      Step4:To create a Maven project in web app
       
@@ -44,4 +44,4 @@
   
      Step8:Download a Apache Tomcat version8.0 using server
       
-     Step9:Download and install a backend(Oracle) 
+     Step9:Download and install a Backend(Oracle) 
