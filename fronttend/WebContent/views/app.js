@@ -21,7 +21,7 @@ var url="http://"+$window.location.host+"/chattapp";
 	    
 	   {
 		   
-		   $window.location.href = "http://localhost:8090/fronttend/index.html";
+		   $window.location.href = "http://localhost:8081/fronttend/index.html";
 	   }
        
          console.log(data);
@@ -32,8 +32,7 @@ var url="http://"+$window.location.host+"/chattapp";
 	});
 	}
 	
-	
-    
+	           
 	           
 	           $scope.registerr=function()
 	{
