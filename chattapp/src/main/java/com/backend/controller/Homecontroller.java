@@ -7,12 +7,17 @@ import java.util.List;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+
 import com.backend.dao.UserDao;
 import com.backend.model.Chat;
+import com.backend.model.blog;
 
 @RestController
 public class Homecontroller {
@@ -64,8 +69,24 @@ public class Homecontroller {
 		{
 		System.out.println("valid details");
 	    return new ResponseEntity<Chat>(HttpStatus.OK);
-	
 		}
+		}
+		
+		@RequestMapping("blog")
+		public ResponseEntity<blog>gotoblog(@ModelAttribute("bg") blog bg,Model m)
+		{System.out.println("controller");
+		List<blog> blog=new ArrayList<blog>();
+		
+		{
+		System.out.println("blog");
+		return new ResponseEntity<blog>(HttpStatus.OK);
+		
+		}
+
+		
+		
+		
+		
 	
 	
 	}}
