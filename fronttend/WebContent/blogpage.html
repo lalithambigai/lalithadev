@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="< value='/resources/bootstrap-3.3.7-dist/css/bootstrap.min.css'/>">
+  <script src="<value='/resources/bootstrap-3.3.7-dist/js/jquery.min.js'/>"></script>
+  <script src="<value='/resources/bootstrap-3.3.7-dist/js/bootstrap.min.js'/>"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+   <!-- 
+    <link href="< value='/resources/css/bootstrap.min.css'/>" rel="stylesheet">
+	<link rel="stylesheet" href="< value='/resources/css/font-awesome.min.css'/>"/>
+	<link rel="stylesheet" href="< value='/resourcescss/animate.css'/>">
+	<link rel="stylesheet" href="< value='/resourcescss/overwrite.css'/>">
+	<link href="< value='/resources/css/animate.min.css'/>" rel="stylesheet"> 
+	<link href="< value='/resources/css/style.css'/>" rel="stylesheet" /> -->	
+ <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	 -->
+
+
+
+ 
+	<style>
+body
+{
+background-image: url("<c:url value='/resources/img/m3.jpg'/>");
+  background-repeat: no-repeat; 
+background-size:cover; 
+} 
+</style>
+</head>
+
+<body>	
+<!--/header-->	<br><br><br><br><br><br>
+<div class="container" ng-app="register" ng-controller=controller">
+
+<p>Search your posts here:</p>
+
+<p><input type="text" class="form-control" placeholder="Search...." ng-model="test"></p>
+
+<table class="table" border="2">
+			<th>Blog Id</th>
+			<th>Blog Tag</th>
+			<th>Name</th>
+			<th>Title</th>
+			<th>Content</th>
+			<th>Creation Date</th>
+			<th>View page</th>
+			
+			<!-- <th>Post Comment</th>
+			 -->
+			
+				<tr ng-repeat="b in aa | filter:test">
+	
+					<td>{{b.blogid}}</td>
+					<td>{{b.blogtag}}</td>
+					<td>{{b.blogname}}</td>
+					<td>{{b.blogtitle}}</td>
+					<td>{{b.blogcontent}}</td>
+					<td>{{b.creationdate}}</td>
+					<td><a href="viewpage?id={{b.blogid}}">view</a></td>
+					
+		
+				</tr>
+
+		
+		</table>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- <td><a href="comment?id={{comment.f=bid}}">Comment</a></td>
+ -->
+					<!-- <td><a href="deleteProduct?id={{product.fid}}">delete</a></td>
+ -->

@@ -3,61 +3,37 @@
 <head>
  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="< value='/resources/bootstrap-3.3.7-dist/css/bootstrap.min.css'/>">
-  <script src="<value='/resources/bootstrap-3.3.7-dist/js/jquery.min.js'/>"></script>
-  <script src="<value='/resources/bootstrap-3.3.7-dist/js/bootstrap.min.js'/>"></script>
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
- <!--  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-  -->
-  
-<style>
-
- body {	
-
-background-image: url("http://localhost:8081/fronttend/resources/imag/m3.jpg");
-  background-repeat: no-repeat; 
-background-size:cover; 
-} 
-form
-{
-
-width:400px;
-background-color:white;
-padding:40px;
-margin:40px;
-}
-fieldset
-{
-
-width:500px;
- background-color:pink;
- padding:40px;
-margin:40px;
-}
-
-</style> 
-</head>
-
+<link rel="stylesheet"  href="/fronttend/css/login.css">
+ </head>
+<br>
+<br>
+<br>
+<br>
 <body>
-<div class="container" id="wrap">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-   
-<div id="a">
-<br>
-<br>
-<br>
-<br>
 <div ng-controller="controller">
- <h3>Login Page</h3>
- 
+<div class="background-wrap">
+  <div class="background"></div>
+</div>
+
+<form id="accesspanel" action="login" method="post">
+  <h1 id="litheader">AECEND</h1>
+  <div class="inset">
+    <p>
+      <input type="text" name="username" id="username"   ng-model="username"   placeholder="Username" required>
+    </p>
+    <p>
+      <input type="password" name="password" id="password"  ng-model="password"    placeholder="Access code" required>
+    </p>
+   
+    <input class="loginLoginValue" type="hidden" name="service" value="login" />
+  </div>
+  <p class="p-container">
+    <input type="submit" name="Login" id="go"  ng-click ="loginn()" value="Signin">
+  </p>
+</form>
+
 	  
- <div class="form">
+ <!-- <div class="form">
       <label for="UserName">Username:</label>
       <input type="text"   ng-model="username"  name="username"  required placeholder="Enter user name">
     </div>
@@ -67,13 +43,15 @@ margin:40px;
     </div>
     
     <br>
-    <!--  <input name="_eventId_submit" type="submit" id="btnSubmit" class="btn btn-success" value="Submit"/><br />
-           -->
-   <button type="submit" ng-click ="loginn()">Signin</button>
+     <input name="_eventId_submit" type="submit" id="btnSubmit" class="btn btn-success" value="Submit"/><br />
+          
+   <button type="submit" ng-click ="loginn()">Signin</button> -->
  
  
 </div>
 
-</div></div></div></div>
+
 </body>
 </html>
+
+   

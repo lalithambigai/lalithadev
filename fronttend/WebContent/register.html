@@ -2,73 +2,59 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-         
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script> -->
-<!--   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script> -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-    
-    <style>
+<title>chat</title>
+  </head>
+  
 
- 
+<link rel="stylesheet"  href="/fronttend/css/register.css">
 
-body {
-	
-
-background-image: url("http://localhost:8081/fronttend/resources/imag/bg18.jpg");
-  background-repeat: no-repeat; 
-background-size:cover; 
-} 
-form
-{
-
-width:400px;
-background-color:white;
-padding:40px;
-margin:40px;
-}
-fieldset
-{
-
-width:500px;
-/* background-color:pink;
- */padding:40px;
-margin:40px;
-}
-span
-{
-color:red;
-}
-</style> 
-    </head>
-<!-- <body ng-app="register" class="ng-cloak">  -->
 <div ng-controller="controller">
-      
-        <h1>Sign Up</h1>
+ <div class="wrapper">
+	<div class="container">
+		<h1>Welcome</h1>
+		
+		<form class="form">
+			<input type="text" ng-model="username" placeholder="Username" reqired>
+			<input type="email" ng-model="email" placeholder="Email" required>
+			<input type="password" ng-model="password" placeholder="Password" required>
+			<input type="mobileno" ng-model="mobileno" placeholder="Mobileno" required>
+			<button type="submit" id="login-button" ng-click="registerr()">Sign Up</button>
+		</form>
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+     
+  
+</div>
+</html>
+
+     
+        <!-- <h1>Sign Up</h1>
             <label for="username">UserName:</label>
-          <input type="text" id="username" ng-model="username" name="username" required="enter the username">
+          <input type="text" id="username" ng-model="username" name="username" required="required">
           
           <label for="email">Email:</label>
-          <input type="email" ng-model="email" name="email" required="enter the email">
+          <input type="email" ng-model="email" name="email" required="required">
           
           <label for="password">Password:</label>
-          <input type="password" id="password" ng-model="password"  required="enter password">
+          <input type="password" id="password" ng-model="password"  required="required">
           
            <label for="mobileno">MobileNo:</label>
-          <input type="mobileno" id="mobileno" ng-model="mobileno" required="">
+          <input type="mobileno" id="mobileno" ng-model="mobileno" required="required">
         
         
         
-        <button type="submit" ng-click ="registerr()">Sign Up</button>
-      </div>
- <!--      <div ng-view></div> -->
-    </body>
-</html>
+        <button type="submit" ng-click ="registerr()">Sign Up</button> -->
+   
