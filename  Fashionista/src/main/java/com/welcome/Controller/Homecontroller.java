@@ -2,6 +2,7 @@ package  com.welcome.Controller;
 
 import java.io.IOException;
 import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -16,6 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.backend.dao.UserDao;
 import com.backend.model.User;
+
 
 
 @Controller
@@ -46,11 +48,6 @@ public class Homecontroller {
 	
 	
 	
-	@RequestMapping("/LIPSTICK")
-	public ModelAndView gotocate(){
-	return new ModelAndView("LIPSTICK");
-		
-	}
 	
 	@RequestMapping("/check")
 public ModelAndView gotosignup(){
@@ -59,7 +56,7 @@ public ModelAndView gotosignup(){
 
 	@RequestMapping("/Signin")
 	
-    public ModelAndView register(HttpServletRequest req)throws ServletException,IOException
+    public <getParameter> ModelAndView register(HttpServletRequest req)throws ServletException,IOException
 	{
 		session=req.getSession(true);
 		String s= req.getParameter("username");
@@ -143,6 +140,7 @@ public ModelAndView gotosignup(){
 		}
 }	   
 	   
+
 
 
 

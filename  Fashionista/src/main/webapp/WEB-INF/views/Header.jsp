@@ -7,6 +7,20 @@
 <html>
 <head>
  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   
+    <link href="<c:url value='/resources/assets/css/fancybox/jquery.fancybox.css'/>" rel="stylesheet">
+	<link rel="stylesheet" href="<c:url value='/resources/assets/css/bootstrap.css'/>"/>
+	<link rel="stylesheet" href="<c:url value='/resources/assets/css/bootstrap-theme.css'/>">
+	<link rel="stylesheet" href="<c:url value='/resources/assets/css/slippry.css'/>">
+	<link href="<c:url value='/resources/bootstrap-3.3.6-dist/js/bootstrap.js.css'/>" rel="stylesheet"> 
+	<link href="<c:url value='/resources/bootstrap-3.3.6-dist/js/bootstrap.min.js.css/style.css'/>" rel="stylesheet" />	
+	<link href="<c:url value='/resources/bootstrap-3.3.6-dist/js/bootstrap.min.js.css/style.css'/>" rel="stylesheet" />	
+   <link href="<c:url value='/resources/assets/css/style.css'/>" rel="stylesheet"/>
+   <link href="<c:url value='/resources/assets/color/default.css'/>" rel="stylesheet"/>
+   <script src="<c:url value='/resources/assets/js/modernizr.custom.js'/>" ></script>
+
+ 
+ 	
 <title>Insert title here</title>
     </head>
 <body>

@@ -14,7 +14,7 @@
 	<link href="<c:url value='/resources/assets/color/default.css'/>" rel="stylesheet"> 
 	<link href="<c:url value='/resources/assets/css/style.css'/>" rel="stylesheet" />	
     <script src="<c:url value='/resources/assets/js/modernizr.custom.js'/>" ></script>
-
+<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <style>

@@ -73,9 +73,9 @@ color:red;
 
 <div class="form">
 <label for="password">Password:</label>
-<input type="password" class="form-control" name="password"  id="txtPassword" required="true" />
+<input type="password" class="form-control" name="password"    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="at least one number and one uppercase and lowercase letter, and at least 8 or more characters" id="txtPassword" required="true" />
 </div>
-<!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="at least one number and one uppercase and lowercase letter, and at least 8 or more characters" -->
+  
 <div class="form">
       <label for="conform_password">Conform Password:</label>
       <input type="password" class="form-control" name="password_confirm" id="txtConfirmPassword" onkeyup="checkPass()">

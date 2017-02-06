@@ -23,45 +23,37 @@ body
 background-image: url("<c:url value='/resources/imag/bg17.jpg'/>");
   background-repeat: no-repeat; 
 background-size:cover; 
-} 
-</style>
+}
+form
+{
+
+width:400px;
+background-color:white;
+padding:40px;
+margin:40px;
+}
+fieldset
+{
+
+width:500px;
+/* background-color:pink;
+ */padding:40px;
+margin:40px;
+}
+span
+{
+color:red;
+}
+</style> 
 </head>
 <body>
+<div class="container" id="wrap">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+   
+ 
 
 
-<!-- <div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
-  <div class="container">
-
-    Brand and toggle get grouped for better mobile display
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Fashionista</a>
-    </div>
-	<div class="navigation">
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="current"><a href="index">Home</a></li>
-	<li><a href="check">SIGNUP</a></li>
-		<li><a href="LOGIN">LOGIN</a></li>
-		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CATEGORY <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-           <li><a href="cat?catt=Lakme">Lakme</a></li>
-          <li><a href="cat?catt=Olay">Olay</a></li>
-          <li><a href="cat?catt=Dazler">Dazler</a></li>
-           <li><a href="cat?catt=Loreal">Loreal</a></li>
-            <li><a href="cat?catt=Maybelline">Maybelline</a></li>
-      </ul> 
-       </ul></nav>
-    </div>
-	</div> 
-
-  </div>
-</div> 
- -->
 <br>
 <br>
 <br>
@@ -74,11 +66,13 @@ background-size:cover;
 <br>
 <br>
 productname: ${showobjj.pname}<br><br>  <%-- ${showobjj.pdesc}<br><br> --%>
-price: ${showobjj.price}<br><br>
+Rs:${showobjj.price}
+<br><br>
 <br>
 <br>
 <input name="_eventId_submit" type="submit" class="btn btn-success" value="Add to cart"/><br />
 <br>
 <input name="_eventId_submit" type="submit" class="btn btn-primary" value="Buynow"/><br />
+</div></div></div>
 </body>
 </html>

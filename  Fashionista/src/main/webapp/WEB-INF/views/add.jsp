@@ -44,25 +44,24 @@ span
 {
 color:red;
 }
+  h2 {
+        color: #00FF00;
+}
 </style> 
 </head>
 <body>
 <div class="container" id="wrap">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
+      
    <br>
    <br>
    <br>
    <br>
    <H2>Product Details</H2>
-  <form:form method="POST" action="productcheck" commandName="prod" enctype="multipart/form-data" style="border-top-width: 100px;height: 1000px; width: 800px; padding-top: 100px; padding-bottom: 100px;left: 100px; top: 100px;">
+  <form:form method="POST" action="productcheck" commandName="prod" enctype="multipart/form-data" style="border-top-width: 100px;height: 500px; width: 600px; padding-top: 100px; padding-bottom: 100px;left: 100px; top: 100px;">
 				 
-				 <!-- 
-				  <div class="form">
-      <label for="pid">Product Id:</label>
-      <input type="text" class="form-control" name="pid">
-    </div>
-				 -->
+				
 					<div class="form">
       <label for="pname">Product Name:</label>
       <input type="text" class="form-control" name="pname">
@@ -81,7 +80,7 @@ color:red;
       <input type="text" class="form-control" name="quantity">
     </div>
   
-    
+    <br>
      <tr>
        <td><form:label path="category">Category:</form:label></td>
        <td><form:select path="category"  id="single1">
@@ -94,12 +93,13 @@ color:red;
        </form:select></td>
     </tr>
     <br>
+    <br>
     <td>
     <input type="file"  value="upload" name="files">
      </td>
+     <br>
     	<input name="_eventId_submit" type="submit" class="btn btn-success" value="Add"/><br />
 			 	</form:form>
-			
-		</div></div></div>
+			</div></div></div>
 	</body>
 </html>
