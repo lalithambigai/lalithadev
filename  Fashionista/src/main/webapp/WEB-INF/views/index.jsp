@@ -345,7 +345,7 @@ background-size:cover;
 			
 				
 				<li>
-				<a href="#slide"><img src="<c:url value='/resources/assets/img/6666.jpg'/>" alt="Welcome to fashion world!">
+				<a href="#slide"><img src="<c:url value='/resources/assets/img/6666.jpg'/>" alt="Welcome to cosmic world!">
 				</a>
 				</li>
 				<li>
@@ -355,7 +355,7 @@ background-size:cover;
 				<li>
 				<a href="#slide"><img src="<c:url value='/resources/assets/img/rr.jpg'/>">
 				</a>
-				</li><li>
+				</li><li> 
 				<a href="#slide"><img src="<c:url value='/resources/assets/img/c5.jpg'/>">
 				</a>
 				</li>
