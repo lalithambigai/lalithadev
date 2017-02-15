@@ -65,6 +65,10 @@ public Cart getcartbyid(int cart_Id) {
 	session.close();
 	return cart;
 }
+public List<Cart> list1(String string) {
+	// TODO Auto-generated method stub
+	return null;
+}
 	    	  
 	
 	

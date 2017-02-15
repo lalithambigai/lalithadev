@@ -25,8 +25,10 @@ import com.backend.dao.Productdao;
 //import com.backend.dao.Productdao;
 import com.backend.dao.UserDao;
 import com.backend.dao.UserDaoImpl;
+import com.backend.model.AddressDetails;
 import com.backend.model.Cart;/*
 import com.backend.model.Category;*/
+
 import com.backend.model.Product;
 import com.backend.model.User;
 
@@ -46,8 +48,8 @@ public class AppConfig {
    sessionBuilder.addAnnotatedClasses(Product.class);
   /* sessionBuilder.addAnnotatedClasses(Category.class);*/
    sessionBuilder.addAnnotatedClasses(Cart.class);
-	 
-	 
+
+   sessionBuilder.addAnnotatedClasses(AddressDetails.class);
 	    return sessionBuilder.buildSessionFactory();
 	}
 	

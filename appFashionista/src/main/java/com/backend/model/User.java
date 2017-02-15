@@ -2,6 +2,8 @@ package com.backend.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.hibernate.validator.constraints.Email;
  
 @Entity
 @Table(name = "USER")
@@ -9,6 +11,8 @@ public class User
 {
 	@Id
 	private String username;
+	
+	@Email(message = "{email.exist}")
     private String email;
     private String password;
     private String password_confirm;

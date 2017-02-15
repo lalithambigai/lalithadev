@@ -6,13 +6,18 @@ import com.backend.model.Cart;
 
 public interface CartDao {
 
-	public List<Cart> list1();
+	public List<Cart> list1(String string);
 	
     public void save(Cart cart);
     public void update(Cart cart);
    public void delete(int cart_Id);
     
   public Cart getcartbyid(int cart_Id);
+
+public List<Cart> list1();
+
+
+
 	
 	
 }
